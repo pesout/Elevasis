@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+
+<!--
+************************
+Created by Stepan Pesout
+*****www.pesout.eu******
+************************
+-->
+
+<html>
+<head>
+	<meta http-equiv="Content-Language" content="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="graph.css">
+	<title>Elevasis Project</title>
+	<meta name="description" content="Elevasis is an app for drawing graphs from GPS data, elevation especially">
+	<meta property="fb:admins" content="100001802478636">
+	<meta property="og:title" content="Elevasis Project">
+	<meta property="og:site_name" content="Elevasis is an app for drawing graphs from GPS data">
+	<meta property="og:description" content="KRATŠÍ POPIS">
+	<link rel="author" href="http://github.com/pesout">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body onload="drawAxis();">
+	<header>
+		<h1>Elevasis Project (in development)<h1>
+	</header>
+
+	<button onclick="startStop();" id="start">start</button>
+	<!-- <button onclick="clearInterval(timer);">stop</button> -->
+	<button onclick="debug_test1();">dt1</button>
+
+	<p class="main-info">
+		<span id="elevation">0</span><br />
+	</p>
+	<!-- <hr /> -->
+	<p class="main-info">
+		<span class="coordinates">
+			<span id="latitude">0</span>&nbsp;&times;&nbsp;<span id="longitude">0</span><br />
+		</span>
+	</p>
+
+	<p class="graph">
+		<script>
+			document.write('<canvas width="' + (window.innerWidth*1 - 57) + '" height="141" id="platno" style="margin-left:30px;position:absolute; top:270px;"></canvas><br>')
+		</script>
+
+		<div id="desc-left">
+			<span id="po1">0</span><br>
+			<div id="po2">0</div><br>
+			<span id="po3">0</span>
+		</div>
+
+		<table>
+			<tr>
+				<td class="popis">Start</td>
+				<td id="a">0</td>
+				<td class="popis">End</td>
+				<td id="b">0</td>
+			</tr>
+			<tr>
+				<td class="popis">Highest</td>
+				<td id="f">0</td>
+				<td class="popis">Lowest</td>
+				<td id="g">0</td>
+			</tr>
+			<tr>
+				<td class="popis">Gradient</td>
+				<td id="c">0</td>
+				<td class="popis">Decline</td>
+				<td id="d">0</td>
+			</tr>
+		</table>
+	</p>
+
+
+	<section class="status-info">
+		<p>
+			Elevs:<br />
+			<span id="elevs"></span><br />
+		</p>
+		<p>
+			Status info:<br />
+			<span id="stat">0</span><br />
+		</p>
+		<p>
+			Changes:<br />
+			<span id="changes">NULL</span>
+		</p>
+		</p>
+			Log:<br />
+			<span id="log">&nbsp;</span><br />
+		</p>
+	</section>
+
+	<button onclick="location.reload()">reload</button>
+	<script src="graph.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>

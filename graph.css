@@ -1,0 +1,52 @@
+/*
+************************
+Created by Stepan Pesout
+*****www.pesout.eu******
+*****@stepanpesout******
+************************
+*/
+
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Mono'); */
+
+body {
+  background-color: #ecf0f1;
+}
+
+#platno {
+  margin:0px;
+}
+
+#desc-left {
+  position: absolute;
+  left: 0;
+  top: 270px;
+  width: 35px;
+  height: 137px;
+  /* background-color: #16a085; */
+  font-size: 9pt;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  color: #555;
+  padding-top: 4px;
+  line-height: 12px;
+}
+#desc-left > div {
+  margin-top:48px;
+  margin-bottom: 37px;
+}
+
+table {
+    width: 100%;
+    margin:7px;
+    margin-top:200px;
+    font-size: 11pt;
+    line-height:18px;
+}
+
+td {
+    height: 40px;
+}
+
+td:nth-child(2), td:nth-child(4) {
+    width:50px;
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+/*
+************************
+Created by Stepan Pesout
+*****www.pesout.eu******
+************************
+*/
+header {
+  background-color: #0984e3;
+  margin: -5px;
+  margin-bottom: 15px;
+  height: 21px;
+  padding: 15px;
+}
+header h1 {
+  font-size: 15pt;
+  color: #fff;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+body {
+  padding: 5px;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.5;
+}
+p {
+  margin-top: 10px;
+}
+p strong {
+  text-transform: uppercase;
+}
+.main-info {
+  text-transform: uppercase;
+  text-align: center;
+}
+#elevation {
+  font-weight: bold;
+  font-size: 40pt;
+}
+.coordinates {
+  font-size: 16pt;
+  font-weight: bold;
+  margin-top: 8px;
+  display: inline-block;
+}
+button {
+  position: relative;
+  color: #fff;
+  background-color: #0984e3;
+  padding: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.25px;
+  box-shadow: 2px 2px 5px #000;
+  margin: 3px;
+}
+button:active {
+  position: relative;
+  top: 1.5px;
+  left: 1.5px;
+  box-shadow: 1px 1px 5px #000;
+}
+button#start {
+  width: 80px;
+}
+.status-info {
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 100px;
+}
+hr {
+  border: 2px solid black;
+}
